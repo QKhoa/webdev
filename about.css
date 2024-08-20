@@ -1,0 +1,165 @@
+/* General Styles */
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+  height: 100%;
+}
+
+body {
+  background-image: url('./background.jpg');
+  height: 100%;
+  background-size: cover;
+
+  background-repeat: no-repeat;
+}
+
+/* Header Styles */
+header {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 15px 30px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  height: 80px;
+  align-content: center;
+
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+
+
+}
+
+.logo img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0 auto;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
+.about-page {
+  margin-top: 80px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 50px;
+}
+
+h1 {
+  font-size: 4em;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.company-description,
+.team-intro {
+  margin: 0 10px;
+}
+
+.company-description {
+  background-color: rgba(71, 68, 63, 0.725);
+}
+
+.intro {
+  line-height: 1.5em;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.team-intro {
+  margin-top: 50px;
+  margin-left: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+.team-members {
+  margin-left: 15px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  /* flex-basis: 70%; */
+  flex-grow: 2;
+  border-radius: 10px;
+
+
+  background-color: rgba(182, 190, 190, 0.459);
+}
+
+.team-member {
+  flex-basis: 30%;
+  margin: 20px
+}
+
+.team-member * {
+  display: block;
+  margin-top: 10px;
+
+}
+
+.team-member .role {
+  background-color: cornflowerblue;
+  padding: 10px 20px;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.team-member span:last-child {
+  text-align: center;
+}
+
+/* You would need to add specific icon images for each social media platform */
+.icon.twitter {
+  background-image: url('twitter-icon.png');
+}
+
+.icon.facebook {
+  background-image: url('facebook-icon.png');
+}
+
+.icon.instagram {
+  background-image: url('instagram-icon.png');
+}
+
+.icon.youtube {
+  background-image: url('youtube-icon.png');
+}
